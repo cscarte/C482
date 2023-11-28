@@ -1,9 +1,9 @@
 package controller;
 
-/**
- * Author: Christopher Carter
- * Email: ccar491@wgu.edu
- * Student ID: 001356206
+/*
+  Author: Christopher Carter
+  Email: ccar491@wgu.edu
+  Student ID: 001356206
  */
 
 import javafx.event.ActionEvent;
@@ -15,15 +15,14 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
 import javafx.stage.Stage;
+import model.InHouse;
+import model.Inventory;
+import model.Outsourced;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.Optional;
 import java.util.ResourceBundle;
-
-import model.InHouse;
-import model.Inventory;
-import model.Outsourced;
 
 /**
  * Creates and opens screen to add parts to inventory system. Can choose if part is made in house or outsourced here.

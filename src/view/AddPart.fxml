@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-<?import javafx.scene.text.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.2" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartController">
+<AnchorPane prefHeight="600.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AddPartController">
     <children>
         <Label layoutX="46.0" layoutY="48.0" text="Add Part">
             <font>
@@ -37,7 +45,7 @@
             </rowConstraints>
             <children>
                 <Label text="Label" />
-                <TextField fx:id="partIDTextField" disable="true" editable="false" text="Auto Gen - Disabled" GridPane.columnIndex="1" />
+                <TextField fx:id="partIDTextField" disable="true" editable="false" text="Auto Generated - Disabled" GridPane.columnIndex="1" />
                 <Label text="Name" GridPane.rowIndex="1" />
                 <TextField fx:id="partNameTextField" GridPane.columnIndex="1" GridPane.rowIndex="1" />
                 <Label text="Price / Cost" GridPane.rowIndex="2" />

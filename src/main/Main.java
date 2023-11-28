@@ -8,16 +8,12 @@ package main;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
-import javafx.stage.Stage;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import java.io.IOException;
+import javafx.stage.Stage;
 
-import model.InHouse;
-import model.Inventory;
-import model.Outsourced;
-import model.Part;
-import model.Product;
+import java.io.IOException;
+import java.util.Objects;
 
 /**
  * Creates and loads main screen of inventory management system program
@@ -26,7 +22,7 @@ public class Main extends Application {
     @Override
     public void start(Stage mainScreen) throws IOException {
         Parent root;
-        root = FXMLLoader.load(getClass().getResource("/view/MainScreen.fxml"));
+        root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("/view/MainScreen.fxml")));
         Scene scene = new Scene(root);
         mainScreen.setTitle("Inventory System - Main Screen");
         mainScreen.setScene(scene);
